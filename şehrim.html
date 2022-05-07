@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<meta name ="viewport" content="width=device-width,initial-scale=1">
+<link href="site.css" rel="stylesheet">
+<title>Şehrim | Burak Can Evci</title>
+<link rel="icon" type="image/x-icon" href="logo4.PNG">
+
+</head>
+<body>
+
+    <header>
+
+        <img class="header"src="bg3.jpg">
+
+
+            <h1 class="headerisim">Burak Can Evci</h1>
+
+                
+
+                
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="hakkimda.html">Hakkımda</a></li>
+            <li><a href="özgeçmişim.html">Özgeçmişim</a></li>
+            <li><a href="şehrim.html">Şehrim</a></li>
+            <li><a href="mirasımız.html">Mirasımız</a></li>
+            <li><a href="ilgialanlarım.html">İlgi  Alanlarım</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="iletişim.html">İletişim</a></li>
+            
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 7</div>
+          <a href="#example"> <img src="anitkabir.png" style="width:70%"> </a>
+          <div class="text">Anıtkabir</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 7</div>
+          <a href="#example2"><img src="aoc.jpg" style="width:70%"></a>
+          <div class="text">Atatürk Orman Çiftliği</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 7</div>
+          <a href="#example3"><img src="atakule.jpg" style="width:70%"></a>
+          <div class="text">Atakule</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 7</div>
+            <a href="#example4"><img src="kizilay.jpg" style="width:70%"></a>
+            <div class="text">Kızılay</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 7</div>
+            <a href="#example5"><img src="kc.PNG" style="width:70%"></a>
+            <div class="text">Kocatepe Cami</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">6 / 7</div>
+            <a href="#example6"><img src="hd.PNG" style="width:70%"></a>
+            <div class="text">Harikalar Diyarı</div>
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">7 / 7</div>
+            <a href="#example7"><img src="mavigol.jpg" style="width:70%"></a>
+            <div class="text">Mavi Göl</div>
+        </div>
+
+
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+          <span class="dot" onclick="currentSlide(7)"></span>
+
+        </div>
+        
+
+
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
+
+
+        
+
+
+        <div class="container" id="x"> 
+            <div class="row" id="y">
+            
+                <div class="col-sm-12 col-lg-6" >
+                    <h3 class="m" id="example">1-Anıtkabir</h3>
+                    <img id="sehirresim" src=anitkabir2.jpg>
+               
+                </div>
+    
+                <div class="col-sm-12 col-lg-6" >
+                    <p class="n">
+                        Anıtkabir, Türkiye'nin başkenti Ankara'nın Çankaya ilçesinde yer alan Mustafa Kemal Atatürk'ün anıt mezarını içeren komplekstir. 
+                        Emin Onat ile Orhan Arda'nın tasarımı olan yapı kompleksinin 1944'te başlanan inşası 1953'te tamamlanmıştır.
+                        Kompleks, anıt mezar binası başta olmak üzere çeşitli yapı ve anıtların yanı sıra Barış Parkı olarak adlandırılan ağaçlık alandan oluşmaktadır.
+                        Anıtkabir'de içerisinde İstiklâl Kulesi, Hürriyet Kulesi, Mehmetçik Kulesi, Müdafaa-i Hukuk Kulesi, Zafer Kulesi, Barış Kulesi, 23 Nisan Kulesi, Misak-ı Millî Kulesi, İnkılâp Kulesi, Aslanlı Yol, Tören Meydanı, İsmet İnönü'nün Lahdi ve Barış Parkı bulunmaktadır.
+                        Anıt Blok bölümünün girişinde yer alan aslanlı yoldaki 24 heykel, 24 Oğuz boyunu temsil etmektedir.
+                        Anıtkabir anıtının sınırları içerisinde bir de Atatürk ve Kurtuluş Savaşı Müzesi yer alıyor.Bu müzede Atatürk’e ait saat, cüzdan gibi kişisel eşyalar yer alıyor.
+                        
+                    </p>
+               
+                </div>
+    
+                <div class="col-sm-12 col-lg-6" >
+                    <h3 class="m" id="example2">2-Atatürk Orman Çiftliği</h3>
+                    <img id="sehirresim" src=aoc2.jpg>
+               
+                </div>
+    
+                <div class="col-sm-12 col-lg-6" >
+                    <p class="n">
+                        Ankara'nın oksijen depolarından ve en önemli yeşil alanlarından biri olan Atatürk Orman Çiftliği, 1925 yılında Gazi Mustafa Kemal Atatürk tarafından bağışlanan arazi üzerine kurulmuş, sadece başkentin değil Türkiye'nin de en önemli yeşil alanlarından biri. 
+                        1992 yılında 1. derece tarihi ve doğal sit alanı olarak koruma altına alınan Atatürk Orman Çiftliği’nin içerisinde hayvanat bahçesi, piknik alanları, yürüyüş yolları, Atatürk'ün kişisel eşyalarını görebileceğiniz dönem mobilyaları ile süslü Atatürk Evi Müzesi ve Gazi Orman Çiftliği gibi çeşitli alanlar bulunuyor.
+                        Atatürk Orman Çiftliği içerisinde yer alan tesislerde üretilen organik süt ürünleri ise tüm Türkiye'ye dağıtılıyor. Bu etkileyici çiftlikte hem keyifli bir doğa gezisi yapabilir hem de Atatürk Evi Müzesi’nin sergi salonunda tarihi hazineleri inceleyebilirsiniz
+                    </p>
+               
+                </div>
+    
+
+                <div class="col-sm-12 col-lg-6" >
+                    <h3 class="m" id="example3">3-Atakule</h3>
+                    <img id="sehirresim" src=atakule2.jpg>
+               
+                </div>
+    
+                <div class="col-sm-12 col-lg-6" >
+                    <p class="n">
+                        1987 yılında yapımına başlayan ve 1989 yılında tamamlanan Atakule’nin içerisindeki alışveriş merkezi, sinema salonları, kafeler, seyir terasları ve kule bölümündeki döner restoran, her yıl binlerce kişi tarafından ziyaret ediliyor. 
+                        Ankara’nın simgesi haline gelmiş yapı şehrin hemen hemen her yerinden görünüyor.
+                        İlginç mimarisi ile de dikkat çeken Atakule Ankara’nın ilk alışveriş merkezi aynı zamanda.
+                        Ayrıca bir seyir terası ve dönen bir restoranı bulunan Atakule Çankaya’da bulunuyor.
+                        Ankara’nın en güzel manzaraları karşısında romantik akşam yemekleri tadabileceğiniz Atakule’nin seyir alanlarında da şehrin en iyi panoramik fotoğraflarını çekebilirsiniz. 
+                        Atakule; Cinnah Caddesi, Çankaya Caddesi ve Zübeyde Hanım Meydanı arasında, toplu taşıma araçlarıyla kolayca ulaşabileceğiniz güzel bir konumda yer alıyor.
+                    </p>
+                </div>
+    
+    
+                <div class="col-sm-12 col-lg-6" >
+                    <h3 class="m" id="example4">4-Kızılay</h3>
+                    <img id="sehirresim" src=kizilay2.jpg>
+               
+                </div>
+    
+                <div class="col-sm-12 col-lg-6" >
+                    <p class="n">
+                        Kızılay Türkiye'nin başkenti Ankara'nın merkezinde bulunan Çankaya'da bir semttir.
+                        Kızılay Ankara'nın kalbi konumundadır.
+                        Alışveriş ve eğlence mekanlarının bir arada bulunan bu meydanda istediğiniz her şeye ulaşabilmeniz mümkündür.
+                        Kültür ve eğlence aynı zamanda alışveriş merkezidir. Ünlü Kızılay Meydanı ile ünlenmiştir. 
+                        Semtin içerisinde yine semtin merkezi konumunda bulunan ve aynı isme sahip olan Kızılay mahallesi olmak üzere, Cumhuriyet, Meşrutiyet, Namık Kemal, Devlet (Güvenpark tarafı), Fidanlık, Kocatepe, Kültür mahalleleri olmak üzere 8 mahalle bulunmaktadır.
+                    </p>
+                </div>
+
+
+                <div class="col-sm-12 col-lg-6" >
+                    <h3 class="m" id="example5">5-Kocatepe Cami</h3>
+                    <img id="sehirresim" src=kc2.jpg>
+               
+                </div>
+    
+                <div class="col-sm-12 col-lg-6" >
+                    <p class="n">
+                        Çankaya'nın Kocatepe semtinde bulunan ve Türkiye'nin simgesel camilerinden biri olduğu için ziyaret etmenizi önerdiğimiz Kocatepe Camii, 1967 yılında yapımının başlamasına rağmen 20 yıl sonra 1987 yılında tamamlandı. 
+4500 m2 alan üzerine inşa edilen ve geleneksel Osmanlı ve Türk mimari örneklerini bir arada görebileceğiniz, 88 metre uzunluğunda 4 minaresi olan Kocatepe Camii’nin içerisinde konferans salonu ve kütüphane de bulunuyor.
+
+Mimar Sinan’ın geliştirdiği özel tarzla inşa edilmesiyle ünlü Kocatepe Camii'nin iç bölümleri; klasik Osmanlı motifleri, etkileyici avizeler, ahşap kapılar, çini süslemeleri, altın varaklar ve özel yapım mermerlerle görülmeye değer güzellikle. 
+Kocatepe Camii, huzurlu atmosferi ve etkileyici mimari yapısıyla Ankara'nın en çok ziyaret edilen tarihi yapılarından bir konumunda.
+                    </p>
+                </div>
+
+                <div class="col-sm-12 col-lg-6" >
+                    <h3 class="m" id="example6">6-Harikalar Diyarı</h3>
+                    <img id="sehirresim" src=hd2.jpg>
+               
+                </div>
+    
+                <div class="col-sm-12 col-lg-6" >
+                    <p class="n">
+                        Harikalar Diyarı, Sincan ilçesinde 1.320.000 m2 gibi geniş bir alan üzerinde hizmet veriyor. 
+Sadece Türkiye'nin değil, Avrupa'nın da en büyük parklarından biri olan Ankara Harikalar Diyarı’nın içerisinde masal kahramanları, mantar evler, minyatür kaleler ve çizgi film karakterleri arasında eğlenceli bir gezi yapabilirsiniz.
+
+Go-Kart pisti, kaykay pisti, model gemi yüzdürme göleti, model araba pisti, futbol sahaları ve tenis kortları ile her zaman hareketli olan Harikalar Diyarı’nın 12 tane sinema salonunda ücretsiz film gösterimlerine katılabilir, Red Kit ve Keloğlan’a kadar pek çok karakterle fotoğraf çektirebilirsiniz.
+                    </p>
+                </div>
+
+
+                <div class="col-sm-12 col-lg-6" >
+                    <h3 class="m" id="example7">7-Mavi Göl</h3>
+                    <img id="sehirresim" src=mavigol2.jpg>
+               
+                </div>
+    
+                <div class="col-sm-12 col-lg-6" >
+                    <p class="n">
+                        Merkeze olan yaklaşık 12 km’lik uzaklığıyla merkeze en yakın piknik yerlerinin başında geliyor.
+2005’te Bayındır Barajı’nın düzenlenmesiyle oluşmuş göle suyun renginden dolayı bugünkü ismi verilmiş.
+Göl çevresinde yürüyüş alanları, at maneji, çocuk oyun parkları, marina ve iskeleler, spor alanları ve daha birçok bölüm bulunuyor.
+Mavi Göl içerisinde yelkenli tekneler mevcut. Bunun yanında deniz bisikletine binerek keyifli dakikalar geçirebilirsiniz.
+Ayrıca yalnızca balıkçılar içi hazırlanmış bir iskele mevcut. Dilerseniz burada balık tutabilirsiniz.
+                    </p>
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+    <footer class="bg-dark text-center text-white">
+      
+        <div class="container p-3 pb-0">
+          
+          <section class="mb-3">
+            
+            <a href="https://www.instagram.com/burak__evci/" target="_blank"> <img class="FootIg" src="ii2.png"> </a>
+            <a href="https://twitter.com/BurakEvci4" target="_blank"> <img class="FootIg" src="tt.png"> </a>
+            <a href="https://www.linkedin.com/in/burak-can-evci-67b798202/" target="_blank"> <img class="FootIg" src="in.png"> </a>
+            <a href="mailto:burakevci06@gmail.com" target="_blank"> <img class="FootIg" src="gm.png"> </a>
+            <a href="https://github.com/BurakEvci" target="_blank"> <img class="FootIg" src="gh.png"> </a>
+  
+            
+            
+          </section>
+          
+        </div>
+        
+      
+        
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright:
+          <a class="text-white" href="benimsiteninlinki">burakcanevci.com</a>
+        </div>
+        
+    </footer>
+
+</body>
+</html>
