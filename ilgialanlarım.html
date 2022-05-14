@@ -24,7 +24,7 @@
 
     <nav>
         <ul>
-            <li><a href="hakkimda.html">Hakkımda</a></li>
+            <li><a href="index.html">Hakkımda</a></li>
             <li><a href="özgeçmişim.html">Özgeçmişim</a></li>
             <li><a href="şehrim.html">Şehrim</a></li>
             <li><a href="mirasımız.html">Mirasımız</a></li>
@@ -35,9 +35,13 @@
         </ul>
     </nav>
 
+    <div class="MovieList">
 
 
+    </div>
 
+
+<!-- 
     <div class="container" id="x">
         <div class="row" id="y">
             <h1 class="ilgibaslik">İLGİ ALANLARIM</h1>
@@ -136,6 +140,7 @@
         </div>
     </div>
 
+-->
 
     <footer class="bg-dark text-center text-white">
         
@@ -147,7 +152,7 @@
             <a href="https://twitter.com/BurakEvci4" target="_blank"> <img class="FootIg" src="tt.png"> </a>
             <a href="https://www.linkedin.com/in/burak-can-evci-67b798202/" target="_blank"> <img class="FootIg" src="in.png"> </a>
             <a href="mailto:burakevci06@gmail.com" target="_blank"> <img class="FootIg" src="gm.png"> </a>
-            <a href="https://github.com/BurakEvci" target="_blank"> <img class="FootIg" src="gh.png"> </a>
+            <a href="https://github.com/BurakEvci" target="_blank"> <img class="FootIg" src="gith.png"> </a>
   
             
             
@@ -159,7 +164,7 @@
         
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
           © 2022 Copyright:
-          <a class="text-white" href="benimsiteninlinki">burakcanevci.com</a>
+          <a class="text-white" href="benimsiteninlinki">burakcanevci.cf</a>
         </div>
         
       </footer>
@@ -167,4 +172,41 @@
 
     
 </body>
+
+
+<script>
+    const MovieList = document.querySelector(".MovieList")
+    const APIKEY = "https://api.themoviedb.org/3/movie/popular?api_key=afca2656cc551632bb3c538c9d52ccc3&language=en-US";
+    const IMAGES_API = 'https://image.tmdb.org/t/p/w1280'
+
+    fetch(APIKEY)
+        .then(response => response.json())
+        .then(data => {
+
+            console.log("data : ", data.results)
+
+            data.results.map(movie => {
+
+                console.log(movie)
+
+                MovieList.innerHTML += ` <div class="movie" >
+                    <p class="movie_title">
+                        ${movie.original_title}
+                    </p>
+                    <img  src=${ IMAGES_API + movie.poster_path }    alt=${movie.original_title}  />
+
+                    <span class="vote_average">${movie.vote_average} </span>
+
+                </div>
+                    `;
+
+
+            })
+
+
+
+
+        }).catch(err => console.log(err));
+</script>
+
 </html>
